@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="1.6" method="upgrade">
+	<name>com_jcodebr</name>
+	<author>JCoderBR Team</author>
+	<authorEmail>jcodebr@gmail.com</authorEmail>
+	<authorUrl>http://jcbr.github.com</authorUrl>
+	<copyright>JCoderBR (C) 2011 Copyright</copyright>
+	<license>GPL</license>
+	<version>1.0</version>
+	<creationDate>May 2011</creationDate>
+	<description>COM_JCODERBR_XML_DESCRIPTION</description>
+
+	<!--
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8" folder="sql">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="sqlsrv">sql/updates/sqlsrv</schemapath>
+		</schemas>
+	</update>
+	-->
+
+	<!-- Front end file, media and language specification -->
+	<files folder="components/com_jcoderbr">
+		<filename>jcoderbr.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+
+	<administration>
+		<menu>JCoderBR</menu>
+		<!--
+		<submenu>
+			<menu link="option=com_installer">Installer</menu>
+			<menu link="option=com_users">Users</menu>
+		</submenu>
+		-->
+		<files folder="adminsitrator/components/com_jcoderbr">
+			<filename>jcoderbr.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+
+		<!-- Legacy 1.5 Language Support -->
+		<!-- Note: Replace this with the actual path to the language file -->
+ 		<languages folder="adminsitrator/components/com_jcoderbr/language">
+			<language tag="en-GB">en-GB/en-GB.com_jcoderbr.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_jcoderbr.sys.ini</language>
+		</languages>
+
+	</administration>
+	<!--
+	<updateservers>
+		<server type="extension" priority="1" name="Extension Update Site">http://jsitepoint.com/update/components/com_alpha/extension.xml</server> 
+		<server type="collection" priority="2" name="Collection Update Site">http://jsitepoint.com/update/update.xml</server>
+	</updateservers>
+	-->
+</extension>

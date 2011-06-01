@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="1.6"
+	client="administrator"
+	method="upgrade">
+	<name>JCoderBR Lib Javascript</name>
+	<creationDate>May 2011</creationDate>
+	<author>JCoderBR Team</author>
+	<authorEmail>jcodebr@gmail.com</authorEmail>
+	<authorUrl>http://jcbr.github.com</authorUrl>
+	<copyright>JCoderBR (C) 2011 Copyright</copyright>
+	<license>License Info</license>
+	<version>1.0</version>
+	<description>MOD_JCBR_LIBJAVASCRIPT_XML_DESCRIPTION</description>
+	<files>
+		<filename
+			module="mod_jcbr_libjavascript">mod_jcbr_libjavascript.php</filename>
+	</files>
+	<languages>
+		<language
+			tag="en-GB">en-GB.mod_jcbr_libjavascript.ini</language>
+	</languages>
+</extension>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="1.6" method="upgrade">
+	<name>LIB_JAVASCRIPT</name>
+	<libraryname>javascript</libraryname>
+	<description>LIB_JUGRS_XML_DESCRIPTION</description>
+	<creationDate>2011-06-02</creationDate>
+	<author>Joomla! Coders Brazil - @JCoderBR</author>
+	<authorEmail>jcoderbr@gmail.com</authorEmail>
+	<authorUrl>https://github.com/JCBR/</authorUrl>
+	<copyright>Joomla! Coders Brazil - @JCoderBR</copyright>
+	<license>JCoderBR licence</license>
+	<version>0.1</version>
+	<!-- <packagerurl>http://www.joomla.org</packagerurl> -->
+	<!-- 
+	Soon. Not now.
+	<updateservers>http://update.joomla.org/libraries/alpha</updateservers> -->
+	<files>
+		<file>javascript.php</file>
+		<file>javascript.xml</file>
+		<file>loader.php</file>
+		<folder>3rd</folder><!-- 3rd party files -->
+		<folder>ajax</folder>
+		<folder>system</folder>
+	</files>
+ 		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.lib_javascript.ini</language>
+			<language tag="en-GB">en-GB/en-GB.lib_javascript.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.lib_javascript.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.lib_javascript.sys.ini</language>
+		</languages>
+</extension>

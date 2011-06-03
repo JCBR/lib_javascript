@@ -6,7 +6,7 @@
  * @copyright       Copyright (C) Joomla! Coders Brazil
  * @license         JCoderBR License
  */
-defined('LIB_JAVASCRIPT') or die('Restricted access');
+defined('LIB_JAVASCRIPT_PATH') or die('Restricted access');
 
 class LoadAjax
 {

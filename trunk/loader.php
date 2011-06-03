@@ -6,13 +6,14 @@
  * @copyright       Copyright (C) Joomla! Coders Brazil
  * @license         JCoderBR License
  */
-defined('LIB_JAVASCRIPT') or die('Restricted access');
+defined('LIB_JAVASCRIPT_PATH') or die('Restricted access');
  
-abstract class JUGRS
+abstract class JCBR
 {
 
     public static $ajax = null;
-	public static $system = null;
+    public static $cookie = null;
+    public static $system = null;
 
     
 
@@ -29,7 +30,21 @@ abstract class JUGRS
 		}
 		return self::$ajax;
 	}
-	
+
+    /*
+    * Return 
+    * @since 
+    */
+    public static function getCookie()
+	{
+		if (!self::$cookie) {
+			jimport('javascript.cookie.load');
+			self::$cookie = LoadCookie::getInstance();
+		}
+		return self::$cookie;
+	}        
+        
+        
     /*
     * Return 
     * @since 

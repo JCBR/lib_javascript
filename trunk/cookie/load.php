@@ -8,13 +8,13 @@
  */
 defined('LIB_JAVASCRIPT_PATH') or die('Restricted access');
 
-class LoadSystem
+class LoadCookie
 {
 
     public static function getInstance()
     {
-        require_once dirname(__FILE__) . DS . 'twitter.php';
-        $instance = new JCBRSystem;
+        require_once dirname(__FILE__) . DS . 'cookie.php';
+        $instance = new JCBRCookie;
         return $instance;
     }
 
